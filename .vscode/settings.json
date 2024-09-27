@@ -30,8 +30,5 @@
     },
     "clangd.arguments": [
         "--header-insertion=never"
-    ],
-    "cSpell.enableFiletypes": [
-        "!c"
     ]
 }
