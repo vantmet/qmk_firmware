@@ -18,11 +18,11 @@ enum custom_keycodes {
 
  [_BASE] = LAYOUT(
     //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        KC_TAB,   KC_Q,   KC_W,     KC_E,   KC_R,    KC_T,                          KC_Y,   KC_U,   KC_I,    KC_O,     KC_P,   KC_BSPC,
+        KC_ESC,   KC_Q,   KC_W,     KC_E,   KC_R,    KC_T,                          KC_Y,   KC_U,   KC_I,    KC_O,     KC_P,   KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-         KC_LSFT, KC_A,   KC_S,    KC_D,    KC_F,     KC_G,                          KC_H,   KC_J,    KC_K,   KC_L,   KC_SCLN, UK_QUOT,
+        LSFT_T(KC_TAB), KC_A,  KC_S,   KC_D,  KC_F,  KC_G,                          KC_H,   KC_J,    KC_K,   KC_L,   KC_SCLN, UK_QUOT,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-         KC_LCTL, KC_Z,   KC_X,   KC_C,     KC_V,    KC_B,                         KC_N,    KC_M,   KC_COMM,  KC_DOT, KC_SLSH, KC_ESC,
+         KC_LCTL, KC_Z,   KC_X,   KC_C,     KC_V,    KC_B,                         KC_N,    KC_M,   KC_COMM,  KC_DOT, KC_SLSH, KC_LSFT,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                                  KC_LGUI, MO(_NUM), KC_ENT,    KC_SPC, MO(_SYM), KC_LALT
                                           //`--------------------------'  `--------------------------'
@@ -32,9 +32,9 @@ enum custom_keycodes {
     //,-----------------------------------------------------.                    ,-----------------------------------------------------.
         KC_TAB,   KC_1,  KC_2,      KC_3,   KC_4,   KC_5,                         KC_6,     KC_7,   KC_8,     KC_9,   KC_0,   KC_DEL,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_LSFT, KC_NO,   KC_NO,  KC_NO,   KC_NO,   KC_NO,                          KC_LEFT, KC_DOWN, KC_UP,  KC_RGHT,  KC_NO, UK_HASH,
+        KC_LSFT, KC_NO,   KC_NO,  DT_UP,   DT_PRNT,  DT_DOWN,                          KC_LEFT, KC_DOWN, KC_UP,  KC_RGHT,  KC_NO, UK_HASH,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-         KC_LCTL, KC_NO,   KC_NO,  KC_NO,   KC_NO,   KC_NO,                       KC_HOME, KC_PGDN,  KC_PGUP, KC_END,   KC_NO,   KC_NO,
+         KC_LCTL, KC_NO,   KC_NO,  KC_NO,   KC_NO,   KC_NO,                       KC_HOME, KC_PGDN,  KC_PGUP, KC_END,   KC_NO, UK_TILD,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                                  KC_LGUI, KC_TRNS, KC_ENT,    KC_SPC, MO(_FUNC), KC_LALT
                                           //`--------------------------'  `--------------------------'
