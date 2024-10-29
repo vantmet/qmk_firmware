@@ -7,6 +7,16 @@
 #define _SYM 2
 #define _FUNC 3
 
+// Left-hand home row mods
+#define HOME_S LGUI_T(KC_S)
+#define HOME_D LALT_T(KC_D)
+#define HOME_F LCTL_T(KC_F)
+
+// Right-hand home row mods
+#define HOME_J RCTL_T(KC_J)
+#define HOME_K LALT_T(KC_K)
+#define HOME_L RGUI_T(KC_L)
+
 enum custom_keycodes {
     LAYER0 = SAFE_RANGE,
     LAYER1,
@@ -20,11 +30,11 @@ enum custom_keycodes {
     //,-----------------------------------------------------.                    ,-----------------------------------------------------.
         KC_ESC,   KC_Q,   KC_W,     KC_E,   KC_R,    KC_T,                          KC_Y,   KC_U,   KC_I,    KC_O,     KC_P,   KC_BSPC,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        LSFT_T(KC_TAB), KC_A,  KC_S,   KC_D,  KC_F,  KC_G,                          KC_H,   KC_J,    KC_K,   KC_L,   KC_SCLN, UK_QUOT,
+        LSFT_T(KC_TAB), KC_A,  HOME_S,   HOME_D,  HOME_F,  KC_G,                    KC_H, HOME_J, HOME_K, HOME_L,   KC_SCLN, UK_QUOT,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
          KC_LCTL, KC_Z,   KC_X,   KC_C,     KC_V,    KC_B,                         KC_N,    KC_M,   KC_COMM,  KC_DOT, KC_SLSH, KC_LSFT,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                                 KC_LGUI, MO(_NUM), KC_ENT,    KC_SPC, MO(_SYM), KC_LALT
+                                                 KC_LSFT, MO(_NUM), KC_ENT,    KC_SPC, MO(_SYM), KC_RSFT
                                           //`--------------------------'  `--------------------------'
     ),
 
@@ -32,11 +42,11 @@ enum custom_keycodes {
     //,-----------------------------------------------------.                    ,-----------------------------------------------------.
         KC_TAB,   KC_1,  KC_2,      KC_3,   KC_4,   KC_5,                         KC_6,     KC_7,   KC_8,     KC_9,   KC_0,   KC_DEL,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_LSFT, KC_NO,   KC_NO,  DT_UP,   DT_PRNT,  DT_DOWN,                          KC_LEFT, KC_DOWN, KC_UP,  KC_RGHT,  KC_NO, UK_HASH,
+        KC_LSFT, KC_NO,   KC_HOME, KC_PGDN,  KC_PGUP, KC_END,                      KC_LEFT, KC_DOWN, KC_UP,  KC_RGHT,  KC_NUBS, UK_HASH,
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-         KC_LCTL, KC_NO,   KC_NO,  KC_NO,   KC_NO,   KC_NO,                       KC_HOME, KC_PGDN,  KC_PGUP, KC_END,   KC_NO, UK_TILD,
+         KC_LCTL, KC_NO,   KC_NO,  DT_UP,   DT_PRNT,  DT_DOWN,                      KC_MINS, KC_PLUS, KC_COMM,  KC_DOT, UK_PIPE, UK_TILD,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                                 KC_LGUI, KC_TRNS, KC_ENT,    KC_SPC, MO(_FUNC), KC_LALT
+                                                 KC_LSFT, KC_TRNS, KC_ENT,    KC_SPC, MO(_FUNC), KC_RSFT
                                           //`--------------------------'  `--------------------------'
 ),
 
@@ -48,7 +58,7 @@ enum custom_keycodes {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
          KC_LCTL, KC_NO,   KC_NO,  KC_NO,   KC_NO,   KC_NO,                       KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, UK_PIPE, UK_TILD,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                                 KC_LGUI, MO(_FUNC), KC_ENT,    KC_SPC, KC_TRNS, KC_RALT
+                                                 KC_LSFT, MO(_FUNC), KC_ENT,    KC_SPC, KC_TRNS, KC_RSFT
                                           //`--------------------------'  `--------------------------'
 ),
 
@@ -60,7 +70,7 @@ enum custom_keycodes {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LCTL, KC_NO,   KC_NO,  KC_NO,   KC_NO,   KC_NO,                       KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_ESC,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                                 KC_LGUI, KC_TRNS, KC_ENT,    KC_SPC, KC_TRNS, KC_RALT
+                                                 KC_LSFT, KC_TRNS, KC_ENT,    KC_SPC, KC_TRNS, KC_RSFT
                                           //`--------------------------'  `--------------------------'
 )
 
