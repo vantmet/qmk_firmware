@@ -15,7 +15,7 @@
 // Right-hand home row mods
 #define HOME_J RCTL_T(KC_J)
 #define HOME_K LALT_T(KC_K)
-#define HOME_L RGUI_T(KC_L)
+#define HOME_L LGUI_T(KC_L)
 
 enum custom_keycodes {
     LAYER0 = SAFE_RANGE,
